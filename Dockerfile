@@ -1,9 +1,7 @@
 # We need HHVM
 FROM jolicode/hhvm
 # We need nginx
-RUN sudo apt-get update 
-
- && sudo apt-get install -y nginx
+RUN sudo apt-get update && sudo apt-get install -y nginx
 
 
 ADD . /root
