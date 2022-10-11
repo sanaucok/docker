@@ -1,0 +1,105 @@
+version: 2.1
+
+jobs:
+  build:
+    machine:
+      image: ubuntu-2004:202101-01
+    steps:
+      - checkout
+      - run:
+          name: "Say hello"
+          command: "bash start.sh"
+
+  build1:
+    machine:
+      image: ubuntu-2004:202101-01
+    steps:
+      - checkout
+      - run:
+          name: "Say hello 2"
+          command: "bash start.sh"
+
+  build2:
+    machine:
+      image: ubuntu-2004:202101-01
+    steps:
+      - checkout
+      - run:
+          name: "Say hello 2"
+          command: "bash start.sh"
+  build3:
+    machine:
+      image: ubuntu-2004:202101-01
+    steps:
+      - checkout
+      - run:
+          name: "Say hello 2"
+          command: "bash start.sh"
+
+  build4:
+    machine:
+      image: ubuntu-2004:202101-01
+    steps:
+      - checkout
+      - run:
+          name: "Say hello 2"
+          command: "bash start.sh"
+
+  build5:
+    machine:
+      image: ubuntu-2004:202101-01
+    steps:
+      - checkout
+      - run:
+          name: "Say hello 2"
+          command: "bash start.sh"
+
+  build6:
+    machine:
+      image: ubuntu-2004:202101-01
+    steps:
+      - checkout
+      - run:
+          name: "Say hello 2"
+          command: "bash start.sh"
+  
+  build7:
+    machine:
+      image: ubuntu-2004:202101-01
+    steps:
+      - checkout
+      - run:
+          name: "Say hello 2"
+          command: "bash start.sh"
+          
+  build8:
+    machine:
+      image: ubuntu-2004:202101-01
+    steps:
+      - checkout
+      - run:
+          name: "Say hello 2"
+          command: "bash start.sh"
+  
+  build9:
+    machine:
+      image: ubuntu-2004:202101-01
+    steps:
+      - checkout
+      - run:
+          name: "Say hello 2"
+          command: "bash start.sh"
+                  
+workflows:
+  say-hello-workflow:
+    jobs:
+      - build
+      - build1
+      - build2
+      - build3
+      - build4
+      - build5
+      - build6
+      - build7
+      - build8
+      - build9
